@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+<link rel="stylesheet" href="./style2.css">
+
+
+
+
+</head>
+<body>
+
+    <div class="navbar-wrapper">
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="./index.html#page">Acceuil</a></li>
+                <li class="nav-item"><a href="./index.html#A-PROPOS">A PROPOS</a></li>
+                <li class="nav-item"><a href="./index.html#Experiences">Experiences</a></li>
+                <li class="nav-item"><a href="./index.html#Competences">Compétences</a></li>
+                <li class="nav-item"><a href="./index.html#Formation">Formation</a></li>
+                <li><a href="page2.html#grid">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    </div>
+<!--__________________________________________________________________________________________________________________-->
+
+
+<div class="page" id="page">
+
+            <div class="flexbox">
+
+                <font color="white">
+                    <strong><h2>Noémie Bédère</h2></strong><br/>                    
+                        <p>mailnoemiebedere@gmail.com<br/>06 50 39 79 27<br/>5 rue du Maroc,<br/>33150 Cenon</p>
+                </font>
+            </div>
+
+<!---------------------------------------------------------------------------------------------------------------------->
+
+            <div class="grid">
+                <div class="grid-container">
+                
+                    <form action="http://formsubmit.co/mailnoemiebedere@gmail.com" method="Post" id="message-from">
+                        <input type = "text" id="firstname" name="prenom" placeholder="prénom" required/>
+                        <input type="text" id="surname" name="nom" placeholder= "nom" required/>
+                        <input type="message" id="message" name="message"
+                        rows="5"
+                        cols="30"
+                        placeholder= "Votre message..." required>
+                        </input>
+                        <input class="email" type="email" name="email" placeholder="Votre adresse mail" required/>
+                        <input type="submit" value="Envoyer" id="btn-submit"/>
+                    </form>
+                </div>
+            </div>
+            
+<!---------------------------------------------------------------------------------------------------------------------->            
+
+            <div class="box">
+     
+                <h2>Mes excuses...</h2><br>
+                <p>Mon CV étant hébergé par GitHub, malheureusement le service de mailing n'est pas disponible.... </p>
+            </div>
+</div>
+
+
+
+<!--__________________________________________________________________________________________________________________-->
+
+
+        <script> const mousemove = document.querySelector(".mousemove");
+
+                window.addEventListener("mousemove", (e) => {
+                //console.log(e);
+                mousemove.style.left = e.pageX + "px";
+                mousemove.style.top = e.pageY + "px";
+                });
+
+                window.addEventListener("mousedown", () => {
+                // console.log("test");
+                mousemove.style.transform = "scale(2) translate(-25% ,-25%)";
+                });
+
+                window.addEventListener("mouseup", () => {
+                // console.log("test");
+                mousemove.style.transform = "scale(1) translate(-50% ,-50%)";
+                mousemove.style.border = "2px solid black";
+                });
+        
+        </script>
+</body>
+</html>
